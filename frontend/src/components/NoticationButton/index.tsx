@@ -3,8 +3,8 @@ import "./styles.css";
 export function NoticationButton() {
   return (
     <>
-      <div className='dsmeta-red-btn-container'>
-        <div className='dsmeta-red-btn'>
+      <div className='red-btn-container'>
+        <div className='red-btn'>
           <img src={icon} alt='Notificar' />
         </div>
       </div>

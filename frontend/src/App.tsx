@@ -1,10 +1,11 @@
-import { NoticationButton } from "./components/NoticationButton";
+import { Header } from "./components/Header";
+import { SalesContainer } from "./components/SalesContainer";
 import "./index.css";
 export function App() {
   return (
     <>
-      <h1>Salve caralho</h1>
-      <NoticationButton />
+      <Header />
+      <SalesContainer />
     </>
   );
 }
