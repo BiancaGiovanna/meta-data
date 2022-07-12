@@ -1,10 +1,10 @@
-import { GlobalStyles } from "./GlobalStyles";
+import { NoticationButton } from "./components/NoticationButton";
+import "./index.css";
 export function App() {
   return (
     <>
-      <title>TecnoTc</title>
-      <GlobalStyles />
-      <h1>Salve caralho</h1>;
+      <h1>Salve caralho</h1>
+      <NoticationButton />
     </>
   );
 }
