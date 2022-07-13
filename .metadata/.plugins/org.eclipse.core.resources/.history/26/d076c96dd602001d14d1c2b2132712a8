@@ -1,0 +1,5 @@
+package dev.bianca.metadata.entities;
+
+public class Sale {
+
+}

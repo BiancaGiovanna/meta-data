@@ -1,0 +1,11 @@
+package dev.bianca.metadata.entities;
+
+public class Sale {
+	private Long id
+	sellerName
+	visited
+	deals
+	amount
+	date
+
+}
