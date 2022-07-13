@@ -1,0 +1,8 @@
+package dev.bianca.metadata.services;
+
+public class SalesService {
+
+	public List<Sales> findSales() {
+		
+	}
+}

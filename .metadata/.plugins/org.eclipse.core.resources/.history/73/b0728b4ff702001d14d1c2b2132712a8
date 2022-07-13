@@ -1,0 +1,5 @@
+package dev.bianca.metadata.controllers;
+
+public class SalesController {
+
+}
