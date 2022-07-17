@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import DataPicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { NoticationButton } from "../NoticationButton";
@@ -9,6 +10,14 @@ export function Card() {
 
   const [minDate, setMinDate] = useState(min);
   const [maxDate, setMaxDate] = useState(max);
+
+  useEffect(() => {
+    axios
+      .get("https://metadata-bianca.herokuapp.com/sales")
+      .then((response) => {
+        console.log(response.data);
+      });
+  }, []);
 
   return (
     <div className='card'>

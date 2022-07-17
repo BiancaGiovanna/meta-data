@@ -2176,3 +2176,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:47.865
 !MESSAGE executing callback sts4.classpath.kTCFCbSl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:28:07.556
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kTCFCbSl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:28:07.558
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.kTCFCbSl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:28:07.558
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:28:07.559
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.kTCFCbSl => OK
