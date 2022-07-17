@@ -1,0 +1,5 @@
+package dev.bianca.metadata.services;
+
+public class SmsService {
+
+}
