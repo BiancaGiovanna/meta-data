@@ -1,10 +1,9 @@
 import { useState } from "react";
 import DataPicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { StyledProps } from "styled-components";
 import { NoticationButton } from "../NoticationButton";
 import "./styles.css";
-export const Card: React.FC<StyledProps<{}>> = () => {
+export function Card() {
   const min = new Date(new Date().setDate(new Date().getDate() - 365));
   const max = new Date();
 
@@ -67,4 +66,4 @@ export const Card: React.FC<StyledProps<{}>> = () => {
       </div>
     </div>
   );
-};
+}
