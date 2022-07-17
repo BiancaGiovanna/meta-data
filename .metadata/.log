@@ -2134,3 +2134,45 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:02:29.375
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.CFWanEHN => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:40.941
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:40.947
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@8a11730[org.springframework.tooling.boot.ls:1.27.0.202108151936(id=1007)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:40.947
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.801
+!MESSAGE Boot LS startup time from start to initialized: 5845ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.938
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kTCFCbSlisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.939
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.948
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.948
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.949
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.949
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.kTCFCbSl => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.964
+!MESSAGE classpath=107 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.969
+!MESSAGE buffering callback sts4.classpath.kTCFCbSl backend false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:46.969
+!MESSAGE executing callback sts4.classpath.kTCFCbSl 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-07-17 19:21:47.865
+!MESSAGE executing callback sts4.classpath.kTCFCbSl SUCCESS [done]
