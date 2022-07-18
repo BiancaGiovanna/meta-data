@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import DataPicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Sale } from "../../models/sale";
+import { BASE_URL } from "../../utils/request";
 import { NoticationButton } from "../NoticationButton";
 import "./styles.css";
 export function Card() {
@@ -10,13 +12,12 @@ export function Card() {
 
   const [minDate, setMinDate] = useState(min);
   const [maxDate, setMaxDate] = useState(max);
+  const [sales, setSales] = useState<Sale[]>([]);
 
   useEffect(() => {
-    axios
-      .get("https://metadata-bianca.herokuapp.com/sales")
-      .then((response) => {
-        console.log(response.data);
-      });
+    axios.get(`${BASE_URL}/sales`).then((response) => {
+      setSales(response.data.content);
+    });
   }, []);
 
   return (
@@ -59,17 +60,23 @@ export function Card() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className='show992'>#341</td>
-              <td className='show576'>08/07/2022</td>
-              <td>Anakin</td>
-              <td className='show992'>15</td>
-              <td className='show992'>11</td>
-              <td>R$ 55300.00</td>
-              <td>
-                <NoticationButton />
-              </td>
-            </tr>
+            {sales.map((sale) => {
+              return (
+                <tr key={sale.id}>
+                  <td className='show992'>{sale.id}</td>
+                  <td className='show576'>
+                    {new Date(sale.date).toLocaleDateString()}
+                  </td>
+                  <td>{sale.sellerName}</td>
+                  <td className='show992'>{sale.visited}</td>
+                  <td className='show992'>{sale.deals}</td>
+                  <td>R$ {sale.amount.toFixed(2)}</td>
+                  <td>
+                    <NoticationButton />
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
