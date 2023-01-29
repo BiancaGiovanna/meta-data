@@ -1,5 +1,0 @@
-package dev.bianca.metadata.repositories;
-
-public interface SaleRepository {
-
-}
